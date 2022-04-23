@@ -5,9 +5,9 @@ This repository will include all of the necessary jupyter notebooks and scripts 
 ### TODO:
 
 - [x] Himmelblau, Rosebrock 2D & ND Function Gradients, Hessians
-- [ ] Newton's three methods 
-- [ ] Gradient descent method
-- [ ] Initial experiments
+- [x] Newton's three methods 
+- [x] Gradient descent method
+- [x] Initial experiments
 - [ ] Convergence experiments (Time, preformance)
 - [ ] Convergence conditions
 - [ ] Hyperparameter variation
