@@ -5,11 +5,9 @@ Hassan Gaber 260891600
     This file includes gradient descent with and without momentum coefficients
     Libraries used: Numpy,
 """
-from math_tools import *
+from src.math_tools import *
 
 import numpy as np
-
-testing:bool=True
 
 def gradient_descent_1(func,N,x_init,alpha=1e-3,epsilon=1e-8,max_iter=10e4):
   """
@@ -79,8 +77,9 @@ def gradient_descent_2(func,N,x_init,beta,alpha=1e-3,epsilon=1e-8,max_iter=10e4)
     t+=1
 
 
-if testing:
-
+def test():
+  
+  if TESTING:
     print("No momentum GD: \n")
 
     guess=1.7*np.ones(2)
@@ -104,3 +103,6 @@ if testing:
     print(gradient_descent_2(himmelblau,2,guess,0.001))
     print(gradient_descent_2(himmelblau,2,guess,0.5))
     print(gradient_descent_2(himmelblau,2,guess,0.85))
+
+if __name__=='__main__':
+    test()

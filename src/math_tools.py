@@ -11,8 +11,8 @@ import sympy
 import numpy as np
 from matplotlib import pyplot as plt
 
-# objective function graphing switch
-graphing:bool=True
+global TESTING
+TESTING=True
 
 # The Himmelblau Function
 def Himmelblau(x0:float,x1:float)->float:
@@ -63,35 +63,40 @@ def ND_Hessian(func,N):
     
     return sympy.lambdify(var_list,sympy.hessian(func,var_list))
 
-# https://www.indusmic.com/post/himmelblau-function
-X=np.linspace(-5,5)
-Y=np.linspace(-5,5)
-x,y=np.meshgrid(X,Y)
-F=Himmelblau(x,y)
+def test():
+    if TESTING:
+        # https://www.indusmic.com/post/himmelblau-function
+        X=np.linspace(-5,5)
+        Y=np.linspace(-5,5)
+        x,y=np.meshgrid(X,Y)
+        F=Himmelblau(x,y)
 
-fig =plt.figure(figsize=(9,9))
-ax=plt.axes(projection='3d')
-ax.contour3D(x,y,F,450)
-ax.set_xlabel('X')
-ax.set_ylabel('Y')
-ax.set_zlabel('F(X,Y)')
-ax.set_title('Himmelblau Function')
-ax.view_init(50,50)
+        fig =plt.figure(figsize=(9,9))
+        ax=plt.axes(projection='3d')
+        ax.contour3D(x,y,F,450)
+        ax.set_xlabel('X')
+        ax.set_ylabel('Y')
+        ax.set_zlabel('F(X,Y)')
+        ax.set_title('Himmelblau Function')
+        ax.view_init(50,50)
 
-plt.show()
+        plt.show()
 
-X=np.linspace(-5,5)
-Y=np.linspace(-5,5)
-x,y=np.meshgrid(X,Y)
-F=Rosenbrock2D(x,y)
+        X=np.linspace(-5,5)
+        Y=np.linspace(-5,5)
+        x,y=np.meshgrid(X,Y)
+        F=Rosenbrock2D(x,y)
 
-fig =plt.figure(figsize=(9,9))
-ax=plt.axes(projection='3d')
-ax.contour3D(x,y,F,450)
-ax.set_xlabel('X')
-ax.set_ylabel('Y')
-ax.set_zlabel('F(X,Y)')
-ax.set_title('Rosenbrock Function')
-ax.view_init(50,50)
+        fig =plt.figure(figsize=(9,9))
+        ax=plt.axes(projection='3d')
+        ax.contour3D(x,y,F,450)
+        ax.set_xlabel('X')
+        ax.set_ylabel('Y')
+        ax.set_zlabel('F(X,Y)')
+        ax.set_title('Rosenbrock Function')
+        ax.view_init(50,50)
 
-plt.show()
+        plt.show()
+
+if __name__=='__main__':
+    test()

@@ -1,0 +1,62 @@
+Guess [0.5 0.5];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method Newton_1
+Solution:  [1. 1.] 
+
+Guess [1.7 1.7 1.7 1.7];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method Newton_1
+Solution:  [1. 1. 1. 1.] 
+
+Guess [0.9 0.9 0.9 0.9 0.9 0.9];  Dimension 6;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2 + (x5 - 1)**2 + 100*(x5**2 - x6)**2;    Optimization method Newton_1
+Solution:  [1. 1. 1. 1. 1. 1.] 
+
+Guess [7. 7.];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method Newton_1
+Solution:  [3. 2.] 
+
+Guess [0.5 0.5];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method Newton_2
+Solution:  [1. 1.] 
+
+Guess [1.7 1.7 1.7 1.7];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method Newton_2
+Solution:  [1. 1. 1. 1.] 
+
+Guess [0.9 0.9 0.9 0.9 0.9 0.9];  Dimension 6;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2 + (x5 - 1)**2 + 100*(x5**2 - x6)**2;    Optimization method Newton_2
+Solution:  [1. 1. 1. 1. 1. 1.] 
+
+Guess [7. 7.];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method Newton_2
+Solution:  [3. 2.] 
+
+Guess [0.5 0.5];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method Newton_3
+Solution:  [1. 1.] 
+
+Guess [1.7 1.7 1.7 1.7];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method Newton_3
+Solution:  [1.08010531 1.1659766  1.08010531 1.1659766 ] 
+
+Guess [0.9 0.9 0.9 0.9 0.9 0.9];  Dimension 6;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2 + (x5 - 1)**2 + 100*(x5**2 - x6)**2;    Optimization method Newton_3
+Solution:  [0.99999509 0.99999014 0.99999509 0.99999014 0.99999509 0.99999014] 
+
+Guess [7. 7.];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method Newton_3
+Solution:  [3. 2.] 
+
+Guess [0.5 0.5];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method gradient_descent_1
+Solution:  [0.99997497 0.99994984] 
+
+Guess [1.7 1.7 1.7 1.7];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method gradient_descent_1
+Solution:  [1.00002504 1.00005018 1.00002504 1.00005018] 
+
+Guess [0.9 0.9 0.9 0.9 0.9 0.9];  Dimension 6;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2 + (x5 - 1)**2 + 100*(x5**2 - x6)**2;    Optimization method gradient_descent_1
+Solution:  [0.99997496 0.99994983 0.99997496 0.99994983 0.99997496 0.99994983] 
+
+Guess [7. 7.];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method gradient_descent_1
+Solution:  [2.99999961 2.00000093] 
+
+Guess [0.5 0.5];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method gradient_descent_2
+Solution:  [0.999976  0.9999519] 
+
+Guess [1.7 1.7 1.7 1.7];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method gradient_descent_2
+Solution:  [0.999976  0.9999519 0.999976  0.9999519] 
+
+Guess [0.9 0.9 0.9 0.9 0.9 0.9];  Dimension 6;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2 + (x5 - 1)**2 + 100*(x5**2 - x6)**2;    Optimization method gradient_descent_2
+Solution:  [0.999976  0.9999519 0.999976  0.9999519 0.999976  0.9999519] 
+
+Guess [7. 7.];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method gradient_descent_2
+Solution:  [-3.77922133 -3.28313443] 
+
+J.Trippitelli, H.Gaber Winter 2022, Numerical Methods Final Project; Problem #3
+Thank you.

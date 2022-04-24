@@ -7,7 +7,7 @@ Hassan Gaber 260891600
                     Numpy,
                     timit (performance metrics).
 """
-from math_tools import *
+from src.math_tools import *
 
 import numpy as np
 import sympy
@@ -75,53 +75,57 @@ def Newton_3(func,N,xinit,max_iter:int=10e3,epsilon:float=10e-6):
     _x = Newton_2(func,N,xinit,alpha,max_iter,epsilon)
     return _x
 
-if testing:
-    # Testing Newton 1
-    print("NEWTON 1 TESTING: \n")
-    # vector with elements {9,9} as a starting point
-    guess=9*np.ones(2)
-    print("Himmelblau Global Minima: ",Newton_1(himmelblau,2,guess))
-    guess=7*np.ones(2)
-    print("2D Rosenbrock Global Minima: ",Newton_1(rosenbrock_2d,2,guess))
+def test():
+
+    if TESTING:
+        # Testing Newton 1
+        print("NEWTON 1 TESTING: \n")
+        # vector with elements {9,9} as a starting point
+        guess=9*np.ones(2)
+        print("Himmelblau Global Minima: ",Newton_1(himmelblau,2,guess))
+        guess=7*np.ones(2)
+        print("2D Rosenbrock Global Minima: ",Newton_1(rosenbrock_2d,2,guess))
 
 
-    # Testing Newton_2
-    print("NEWTON 2 TESTING: \n")
-    guess=9*np.ones(2)
-    gammas=[0.1,0.3,0.5,0.75,0.8,0.95]
-    for g in gammas:
-        print("gamma ",g)
-        start=timeit.default_timer()
-        print("Himmelblau Global Minima: ",Newton_2(himmelblau,2,guess,g))
-        end=timeit.default_timer()
-        print("Function runtime ", str(end-start))
+        # Testing Newton_2
+        print("NEWTON 2 TESTING: \n")
+        guess=9*np.ones(2)
+        gammas=[0.1,0.3,0.5,0.75,0.8,0.95]
+        for g in gammas:
+            print("gamma ",g)
+            start=timeit.default_timer()
+            print("Himmelblau Global Minima: ",Newton_2(himmelblau,2,guess,g))
+            end=timeit.default_timer()
+            print("Function runtime ", str(end-start))
 
-        start=timeit.default_timer()
-        print("2D Rosenbrock Global Minima: ",Newton_2(rosenbrock_2d,2,guess,g))
-        end=timeit.default_timer()
-        print("Function runtime ", str(end-start),"\n")
-    
-    print("NEWTON 3 TESTING: \n")
+            start=timeit.default_timer()
+            print("2D Rosenbrock Global Minima: ",Newton_2(rosenbrock_2d,2,guess,g))
+            end=timeit.default_timer()
+            print("Function runtime ", str(end-start),"\n")
+        
+        print("NEWTON 3 TESTING: \n")
 
-    g_form=lambda x: float(x) * np.ones(2)
+        g_form=lambda x: float(x) * np.ones(2)
 
-    guesses=[g_form(0.1),g_form(0.25),g_form(1.0),g_form(1.9),g_form(2.1),g_form(3),g_form(5),g_form(10)]
+        guesses=[g_form(0.1),g_form(0.25),g_form(1.0),g_form(1.9),g_form(2.1),g_form(3),g_form(5),g_form(10)]
 
-    for guess in guesses:
-        xnow=guess
+        for guess in guesses:
+            xnow=guess
 
-        print(f'Guess {xnow}, Norm of guess {np.linalg.norm(xnow)}')
+            print(f'Guess {xnow}, Norm of guess {np.linalg.norm(xnow)}')
 
-        print("Rosenrock:")
-        start=timeit.default_timer()
-        print(Newton_3(rosenbrock_2d,2,xnow))
-        end=timeit.default_timer()
-        print(str(end-start),"\n")
+            print("Rosenrock:")
+            start=timeit.default_timer()
+            print(Newton_3(rosenbrock_2d,2,xnow))
+            end=timeit.default_timer()
+            print(str(end-start),"\n")
 
-        print("Himmelblau:")
-        start=timeit.default_timer()
-        print(Newton_3(himmelblau,2,xnow))
-        end=timeit.default_timer()
-        print(str(end-start),"\n")
+            print("Himmelblau:")
+            start=timeit.default_timer()
+            print(Newton_3(himmelblau,2,xnow))
+            end=timeit.default_timer()
+            print(str(end-start),"\n")
 
+if __name__=='__main__':
+    test()
     
