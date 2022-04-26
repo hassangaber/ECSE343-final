@@ -3,7 +3,8 @@ Johan Trippitelli
 Hassan Gaber 260891600
 ~/ECSE343-final/src/mathtools.py
     This python script organizes all vector computations.
-    Libraries used: Sympy (math expressions and computation),
+    
+    *Libraries used: Sympy (math expressions and computation),
                     Numpy,
                     Matplotlib
 '''
@@ -40,27 +41,23 @@ rosenbrock_4d=((100*(x1**2-x2)**2+(x1-1)**2)+(100*(x3**2-x4)**2+(x3-1)**2))
 # N=6
 rosenbrock_6d=((100*(x1**2-x2)**2+(x1-1)**2)+(100*(x3**2-x4)**2+(x3-1)**2)+(100*(x5**2-x6)**2+(x5-1)**2))
 
+# Generate the correct number of symbols as variables xn
+def gen_symbols(N):
+    var_list = []
+    for i in range(1,N+1): var_list.append("x"+str(i))
+    var_list = sympy.symbols(var_list)
+    return var_list
 
 # N-dimensional gradient vector operator
 def ND_Gradient(func,N:int):
     assert N%2==0, "Invalid N"
-    var_list = []
-    
-    for i in range(1,N+1):
-        var_list.append("x"+str(i))
-    var_list = sympy.symbols(var_list)
-    
+    var_list = gen_symbols(N)
     return sympy.lambdify(var_list,sympy.derive_by_array(func,var_list))
 
 # N-dimensional hessian matrix
 def ND_Hessian(func,N):
     assert N%2==0, "Invalid N"
-    var_list = []
-    
-    for i in range(1,N+1):
-        var_list.append("x"+str(i))
-    var_list = sympy.symbols(var_list)
-    
+    var_list = gen_symbols(N)
     return sympy.lambdify(var_list,sympy.hessian(func,var_list))
 
 def test():

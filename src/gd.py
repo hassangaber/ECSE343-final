@@ -3,7 +3,8 @@ Johan Trippitelli
 Hassan Gaber 260891600
 ~/ECSE343-final/src/gd.py
     This file includes gradient descent with and without momentum coefficients
-    Libraries used: Numpy,
+    
+    *Libraries used: Numpy
 """
 from src.math_tools import *
 

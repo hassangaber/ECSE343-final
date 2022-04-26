@@ -1,13 +1,11 @@
 from src.math_tools import *
 from src.utils import optimize
+
 import sys
-import timeit
 
 file_paths = ['/Users/hassan/Desktop/ECSE343_final/results/test_0.txt',
               '/Users/hassan/Desktop/ECSE343_final/results/test_1.txt'
             ]
-
-
 
 # Iterating through all our optimization methods, all of our functions, and some random guesses
 # to find a good starting point to start exploring hyperparameter and hyperalgorithmic properties.

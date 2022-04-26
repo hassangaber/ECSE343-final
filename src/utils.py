@@ -3,12 +3,14 @@ Johan Trippitelli
 Hassan Gaber 260891600
 ~/ECSE343-final/src/utils.py
     Utility methods for other files
-    Libraries used: Sympy,
+
+    *Libraries used:Sympy,
                     Numpy,
                     timit (performance metrics).
 """
 from src.newton import *
 from src.gd import *
+
 import numpy as np
 
 # automatic optimization
