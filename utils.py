@@ -8,8 +8,8 @@ Hassan Gaber 260891600
                     Numpy,
                     timit (performance metrics).
 """
-from src.newton import *
-from src.gd import *
+from newton import *
+from gd import *
 
 import numpy as np
 

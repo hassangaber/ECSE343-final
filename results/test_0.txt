@@ -1,61 +1,100 @@
-Guess [0.5 0.5];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method Newton_1
-Solution:  [1. 1.] 
+Guess [0.9 0.9];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method Newton_1
+Convergence iteration:  4
+Solution:  [0.99999999 0.99999974] 
 
-Guess [1.7 1.7 1.7 1.7];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method Newton_1
-Solution:  [1. 1. 1. 1.] 
+Guess [0.9 0.9 0.9 0.9];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method Newton_1
+Convergence iteration:  4
+Solution:  [0.99999999 0.99999974 0.99999999 0.99999974] 
 
 Guess [0.9 0.9 0.9 0.9 0.9 0.9];  Dimension 6;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2 + (x5 - 1)**2 + 100*(x5**2 - x6)**2;    Optimization method Newton_1
-Solution:  [1. 1. 1. 1. 1. 1.] 
+Convergence iteration:  4
+Solution:  [0.99999999 0.99999974 0.99999999 0.99999974 0.99999999 0.99999974] 
 
 Guess [7. 7.];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method Newton_1
-Solution:  [3. 2.] 
+Convergence iteration:  7
+Solution:  [3.         2.00000001] 
 
-Guess [0.5 0.5];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method Newton_2
-Solution:  [1. 1.] 
+Guess [1.1 1.1];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method Newton_1
+Convergence iteration:  8
+Solution:  [-3.779312   -3.28319338] 
 
-Guess [1.7 1.7 1.7 1.7];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method Newton_2
-Solution:  [1. 1. 1. 1.] 
+Guess [0.9 0.9];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method Newton_2
+Convergence iteration:  14
+Solution:  [1.00002982 1.00005747] 
+
+Guess [0.9 0.9 0.9 0.9];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method Newton_2
+Convergence iteration:  14
+Solution:  [1.00002982 1.00005747 1.00002982 1.00005747] 
 
 Guess [0.9 0.9 0.9 0.9 0.9 0.9];  Dimension 6;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2 + (x5 - 1)**2 + 100*(x5**2 - x6)**2;    Optimization method Newton_2
-Solution:  [1. 1. 1. 1. 1. 1.] 
+Convergence iteration:  15
+Solution:  [1.0000015 1.0000029 1.0000015 1.0000029 1.0000015 1.0000029] 
 
 Guess [7. 7.];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method Newton_2
-Solution:  [3. 2.] 
+Convergence iteration:  8
+Solution:  [2.99999853 2.00000704] 
 
-Guess [0.5 0.5];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method Newton_3
-Solution:  [1. 1.] 
+Guess [1.1 1.1];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method Newton_2
+Convergence iteration:  9
+Solution:  [-3.77932138 -3.28323229] 
 
-Guess [1.7 1.7 1.7 1.7];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method Newton_3
-Solution:  [1.08010531 1.1659766  1.08010531 1.1659766 ] 
+Guess [0.9 0.9];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method Newton_3
+Convergence iteration:  5174
+Solution:  [0.97369848 0.94793214] 
+
+Guess [0.9 0.9 0.9 0.9];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method Newton_3
+Convergence iteration:  5382
+Solution:  [0.98168435 0.96359588 0.98168435 0.96359588] 
 
 Guess [0.9 0.9 0.9 0.9 0.9 0.9];  Dimension 6;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2 + (x5 - 1)**2 + 100*(x5**2 - x6)**2;    Optimization method Newton_3
-Solution:  [0.99999509 0.99999014 0.99999509 0.99999014 0.99999509 0.99999014] 
+Convergence iteration:  5502
+Solution:  [0.98515574 0.97044434 0.98515574 0.97044434 0.98515574 0.97044434] 
 
 Guess [7. 7.];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method Newton_3
-Solution:  [3. 2.] 
+Convergence iteration:  1058
+Solution:  [3.00276457 2.01306566] 
 
-Guess [0.5 0.5];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method gradient_descent_1
-Solution:  [0.99997497 0.99994984] 
+Guess [1.1 1.1];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method Newton_3
+Convergence iteration:  155
+Solution:  [-0.26984821 -0.92094287] 
 
-Guess [1.7 1.7 1.7 1.7];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method gradient_descent_1
-Solution:  [1.00002504 1.00005018 1.00002504 1.00005018] 
+Guess [0.9 0.9];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method gradient_descent_1
+GD iterations:  19328
+Solution:  [0.99997496 0.99994983] 
+
+Guess [0.9 0.9 0.9 0.9];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method gradient_descent_1
+GD iterations:  19328
+Solution:  [0.99997496 0.99994983 0.99997496 0.99994983] 
 
 Guess [0.9 0.9 0.9 0.9 0.9 0.9];  Dimension 6;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2 + (x5 - 1)**2 + 100*(x5**2 - x6)**2;    Optimization method gradient_descent_1
+GD iterations:  19328
 Solution:  [0.99997496 0.99994983 0.99997496 0.99994983 0.99997496 0.99994983] 
 
 Guess [7. 7.];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method gradient_descent_1
+GD iterations:  511
 Solution:  [2.99999961 2.00000093] 
 
-Guess [0.5 0.5];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method gradient_descent_2
+Guess [1.1 1.1];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method gradient_descent_1
+GD iterations:  490
+Solution:  [2.99999962 2.00000092] 
+
+Guess [0.9 0.9];  Dimension 2;   Objective function (1 - x1)**2 + 100*(-x1**2 + x2)**2;    Optimization method gradient_descent_2
+GD iterations:  19458
 Solution:  [0.999976  0.9999519] 
 
-Guess [1.7 1.7 1.7 1.7];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method gradient_descent_2
+Guess [0.9 0.9 0.9 0.9];  Dimension 4;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2;    Optimization method gradient_descent_2
+GD iterations:  19458
 Solution:  [0.999976  0.9999519 0.999976  0.9999519] 
 
 Guess [0.9 0.9 0.9 0.9 0.9 0.9];  Dimension 6;   Objective function (x1 - 1)**2 + 100*(x1**2 - x2)**2 + (x3 - 1)**2 + 100*(x3**2 - x4)**2 + (x5 - 1)**2 + 100*(x5**2 - x6)**2;    Optimization method gradient_descent_2
+GD iterations:  19458
 Solution:  [0.999976  0.9999519 0.999976  0.9999519 0.999976  0.9999519] 
 
 Guess [7. 7.];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method gradient_descent_2
+GD iterations:  2469
 Solution:  [-3.77922133 -3.28313443] 
 
-J.Trippitelli, H.Gaber Winter 2022, Numerical Methods Final Project; Problem #3
+Guess [1.1 1.1];  Dimension 2;   Objective function (x1 + x2**2 - 7)**2 + (x1**2 + x2 - 11)**2;    Optimization method gradient_descent_2
+GD iterations:  2184
+Solution:  [2.99996156 2.00000655] 
+

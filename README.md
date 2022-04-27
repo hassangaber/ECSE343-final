@@ -1,13 +1,22 @@
-## ECSE 343 Numerical Methods Final Project
+# ECSE 343 Numerical Methods Final Project
 
-This repository will include all of the necessary jupyter notebooks and scripts to compile the `main.py` file displaying all of our experiments for the optimization problem.
+## Johan Trippitelli 260917958
+## Hassan Gaber 260891600
 
-### TODO:
+# IMPORTANT DEPENDENCY: SYMPY LIBRARY
 
-- [x] Himmelblau, Rosebrock 2D & ND Function Gradients, Hessians
-- [x] Newton's three methods 
-- [x] Gradient descent method
-- [x] Initial experiments
-- [ ] Convergence experiments (Time, preformance)
-- [ ] Convergence conditions
-- [ ] Hyperparameter variation
+# Main.py
+
+Run to display all experiments with all methods and objective functions.
+
+# Newton.py, gd.py
+
+Implements all versions of Newton's optimization algorithm and momentum/non-momentum based gradient descent.
+
+# math_tools.py, utils.py, experiments.py
+
+Implements sympy vector operations, utility functions, and a testing space for hyperparameter tuning.
+
+# final_notebook_hassan.ipynb
+
+Our notebook demonstarting our initial implementations and some experimental proofs.
